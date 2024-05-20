@@ -190,3 +190,23 @@ setTimeout( ()=> {
     console.log("Mumbai");
 },4000);
 console.log("welcome to");
+
+//Set Interval function
+//setInterval(function,timeout)
+let id = console.log("Hi there!"); 
+setInterval=( ()=> {
+    console.log("Mumbai");
+},2000);
+
+clearInterval(id); //this will stops the work in between when we want, we have only pass the id of that function.
+
+//Ques: write a func that prints "Hello wrorld" 5 times at intervals of 2s each
+let id2 = setInterval( () => {
+    console.log("Hello World");
+}, 2000);
+
+setTimeout( () => {
+    clearInterval(id2);
+    console.log("clear interval ran");
+}, 10000);
+ 
